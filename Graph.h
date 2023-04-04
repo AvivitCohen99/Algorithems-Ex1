@@ -3,6 +3,7 @@
 
 
 class Graph {
+    char isDirected;
 
 
 
