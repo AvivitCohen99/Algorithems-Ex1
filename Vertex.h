@@ -28,7 +28,7 @@ public:
     void setOutDegree(int outDegree);
     int getTotalDegree() const;
     void setTotalDegree(int totalDegree);
-    void addEdge(int a, int b); // adds the edge (a,b).
+    void addEdge(int vertex);
 };
 
 

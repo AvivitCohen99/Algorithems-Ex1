@@ -2,10 +2,20 @@
 #define ALGORITHMS_EX1_GRAPH_H
 
 #include <vector>
+#include "Vertex.h"
 
 
 class Graph {
-    char isDirected;
+
+private:
+    bool isDirected;
+    std::vector<Vertex> vertices;
+    bool isEulerian;
+
+public:
+    Graph(bool isDirected, int numOfVertices, int numOfEdges, std::vector<std::pair<int, int>> edges);
+
+
 
 
 
