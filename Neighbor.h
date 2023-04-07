@@ -5,8 +5,9 @@
 class Neighbor {
 
 private:
-    int VertexNumber;
-    bool IsMarked;
+    int vertexNumber;
+    bool isMarked;
+    Neighbor* mutualVertex;
 
 public:
     Neighbor(int vertexNumber);

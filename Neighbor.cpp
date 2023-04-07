@@ -1,18 +1,18 @@
 #include "Neighbor.h"
 
 Neighbor::Neighbor(int vertexNumber) {
-    VertexNumber = vertexNumber;
-    IsMarked = false;
+    this->vertexNumber = vertexNumber;
+    this->isMarked = false;
 }
 
 int Neighbor::getVertexNumber() const {
-    return VertexNumber;
+    return vertexNumber;
 }
 
 bool Neighbor::getIsMarked() const {
-    return IsMarked;
+    return this->isMarked;
 }
 
 void Neighbor::setIsMarked(bool isMarked) {
-    IsMarked = isMarked;
+    this->isMarked = isMarked;
 }
