@@ -3,13 +3,14 @@
 Neighbor::Neighbor(int vertexNumber) {
     this->vertexNumber = vertexNumber;
     this->isMarked = false;
+    this->mutualVertex = nullptr;
 }
 
 int Neighbor::getVertexNumber() const {
     return vertexNumber;
 }
 
-bool Neighbor::getIsMarked() const {
+bool Neighbor::isEdgeMarked() const {
     return this->isMarked;
 }
 
