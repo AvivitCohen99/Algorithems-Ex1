@@ -49,5 +49,9 @@ void Vertex::setTotalDegree(int totalDegree) {
     this->totalDegree = totalDegree;
 }
 
+void Vertex::addEdge(int vertex) {
+    this->neighbors.push_back(Neighbor(vertex));
+}
+
 
 
