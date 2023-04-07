@@ -7,13 +7,14 @@ class Neighbor {
 private:
     int vertexNumber;
     bool isMarked;
-    Neighbor* mutualVertex;
+    Neighbor* mutualVertex; // Pointer from edge (x,y) to (y,x) if the graph is not directed.
+                            // Points to nullptr if the graph is directed.
 
 public:
     Neighbor(int vertexNumber);
     ~Neighbor() = default;
     int getVertexNumber() const;
-    bool getIsMarked() const;
+    bool isEdgeMarked() const;
     void setIsMarked(bool isMarked);
 };
 
